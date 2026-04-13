@@ -90,7 +90,7 @@ resource "aws_eks_node_group" "example" {
     max_size     = 4
     min_size     = 1
   }
-  instance_types = ["c7i-flext.large"]
+  instance_types = ["c7i-flex.large"]
 
   # Ensure that IAM Role permissions are created before and deleted after EKS Node Group handling.
   # Otherwise, EKS will not be able to properly delete EC2 Instances and Elastic Network Interfaces.
